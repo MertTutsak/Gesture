@@ -10,8 +10,6 @@ public class GesturePresenter implements GestureDetector.OnGestureListener, Gest
 
     protected GestureDetectorCompat gestureDetector;
 
-    protected static final int SWIPE_MIN_DISTANCE = 120;
-    protected static final int SWIPE_MAX_OFF_PATH = 250;
     protected static final int SWIPE_THRESHOLD_VELOCITY = 200;
 
     public GesturePresenter(Context context) {

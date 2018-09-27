@@ -31,7 +31,7 @@ public class Fling extends GesturePresenter {
                     Log.d("GESTURE_EVENT", "onFling => Left");
                     fling.LeftFling();
                 }
-                return true;
+                result = true;
             }
         } else {
             if (Math.abs(diffY) > SWIPE_THRESHOLD_VELOCITY && Math.abs(velocityY) > SWIPE_THRESHOLD_VELOCITY) {
@@ -42,10 +42,10 @@ public class Fling extends GesturePresenter {
                     Log.d("GESTURE_EVENT", "onFling => Top");
                     fling.TopFling();
                 }
-                return true;
+                result = true;
             }
         }
 
-        return false;
+        return result;
     }
 }
