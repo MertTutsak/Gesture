@@ -1,1 +1,1 @@
-# Gestur => SWİPE
+# Gesture => SWİPE
